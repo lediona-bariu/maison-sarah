@@ -102,3 +102,80 @@ nav a {
   width: 100%;
   height: auto;
 }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 60rem;
+}
+
+th,
+td {
+  border: 1px solid #d8c8b8;
+  padding: 1rem 1.2rem;
+  text-align: left;
+}
+
+th {
+  background-color: #3b2417;
+  color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f4e8d8;
+}
+
+form {
+  max-width: 70rem;
+}
+
+fieldset {
+  margin-bottom: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.field {
+  display: block;
+  width: 100%;
+  max-width: 40rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  padding: 1rem;
+  border: 1px solid #b8a897;
+  margin-bottom: 1.6rem;
+}
+
+.field:focus {
+  outline: 3px solid #7a3e18;
+  outline-offset: 2px;
+}
+
+.field:required {
+  border-left: 4px solid #7a3e18;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #7a3e18;
+}
+
+button {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  background-color: #3b2417;
+  color: #ffffff;
+  border: none;
+  padding: 1rem 1.6rem;
+  cursor: pointer;
+}
