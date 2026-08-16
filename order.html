@@ -29,11 +29,110 @@
     <main>
       <div class="container">
         <h1>Pre-order from Maison Sarah</h1>
+        <form action="" method="get">
+          <fieldset>
+            <legend>Who is picking up?</legend>
 
-        <p>
-          Our online pre-order form is coming soon. Please check back soon to
-          place your order.
-        </p>
+            <label for="name">Name</label>
+            <input
+              class="field"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              class="field"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Pickup day</legend>
+
+            <label class="choice" for="saturday">
+              <input
+                type="radio"
+                id="saturday"
+                name="pickup-day"
+                value="Saturday"
+                checked
+              />
+              Saturday
+            </label>
+
+            <label class="choice" for="sunday">
+              <input
+                type="radio"
+                id="sunday"
+                name="pickup-day"
+                value="Sunday"
+              />
+              Sunday
+            </label>
+
+            <label for="pickup-time">Pickup time</label>
+            <select class="field" id="pickup-time" name="pickup-time">
+              <option value="09:00">09:00</option>
+              <option value="10:00">10:00</option>
+              <option value="11:00">11:00</option>
+              <option value="12:00">12:00</option>
+              <option value="13:00">13:00</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Your order</legend>
+
+            <label class="choice" for="baguette">
+              <input
+                type="checkbox"
+                id="baguette"
+                name="product"
+                value="Baguette"
+              />
+              Baguette
+            </label>
+
+            <label class="choice" for="croissant">
+              <input
+                type="checkbox"
+                id="croissant"
+                name="product"
+                value="Croissant"
+              />
+              Croissant
+            </label>
+
+            <label class="choice" for="sourdough">
+              <input
+                type="checkbox"
+                id="sourdough"
+                name="product"
+                value="Sourdough"
+              />
+              Sourdough
+            </label>
+
+            <label for="notes">Notes</label>
+            <textarea
+              class="field"
+              id="notes"
+              name="notes"
+              rows="4"
+              placeholder="Add any special requests here"
+            ></textarea>
+
+            <button type="submit">Submit pre-order</button>
+          </fieldset>
+        </form>
       </div>
     </main>
 
