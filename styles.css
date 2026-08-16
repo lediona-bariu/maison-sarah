@@ -1,31 +1,58 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
   background-color: #fff8ed;
   color: #33251d;
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
 }
 
 header,
 footer {
   background-color: #3b2417;
   color: #ffffff;
+  text-align: center;
+}
+
+footer {
+  font-size: 1.4rem;
 }
 
 h1,
 h2 {
   color: #7a3e18;
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  font-size: 3.6rem;
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  font-size: 2.4rem;
 }
 
 nav a {
   color: #ffffff;
   text-decoration: none;
 }
+
 .brand {
   color: #ffffff;
-  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  font-size: 2.4rem;
+  font-weight: 700;
 }
+
 .tagline {
   color: #7a3e18;
   font-style: italic;
 }
+
 .price {
   color: #8b4513;
   font-weight: bold;
